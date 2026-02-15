@@ -1,4 +1,4 @@
-cv<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="gu">
 <head>
   <meta charset="UTF-8">
@@ -15,19 +15,23 @@ cv<!DOCTYPE html>
     body {
       margin: 0;
       font-family: "Noto Sans Gujarati", sans-serif;
-      background-color: #fffdf7;
+      background-image: url("aimg.jpeg");
       overflow-x: hidden;
     }
     header {
-      background: #ff6600;
-      color: white;
+      background-image: url("ass.jpeg");
+      background-repeat: no-repeat; 	
+      background-size: 100% 100%;
+      background-position: center;
+      hight: 200%;
+      color: black;
       text-align: center;
       padding: 20px 0;
       font-size: 28px;
       letter-spacing: 1px;
     }
     .menu-bar {
-      background: #000; /* Black menu bar */
+      background: #000;
       border-bottom: 3px solid #000;
       display: flex;
       justify-content: center;
@@ -51,30 +55,20 @@ cv<!DOCTYPE html>
       background: #fff;
       color: #000;
     }
-    #landing {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%;
-      height: 100%;
-      background: url("bg1.jpeg") no-repeat center center/cover; /* 🔥 Background image added */
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      z-index: 9999;
+
+    h1 { font-size: 36px; text-align: center; margin-top: 30px; }
+    p { font-size: 18px; text-align: center; line-height: 28px; }
+
+    .button {
+      font-size: 16px;
+      background-color: black;
+      padding: 12px 30px;
       color: white;
-      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      margin: 20px auto;
     }
-    #landing img {
-      width: 80%;
-      max-width: 300px;
-      border-radius: 20px;
-      background: rgba(255, 255, 255, 0.8); /* Optional: white transparent bg behind logo */
-      padding: 10px;
-    }
-   
-    
-    }
+
     .product-container {
       display: flex;
       justify-content: center;
@@ -82,6 +76,7 @@ cv<!DOCTYPE html>
       gap: 20px;
       margin: 20px 0;
     }
+
     .product-card {
       width: 90%;
       max-width: 250px;
@@ -92,8 +87,10 @@ cv<!DOCTYPE html>
       background-color: white;
       transition: transform 0.3s ease;
     }
+
     .product-card:hover { transform: scale(1.05); }
     .product-card img { width: 100%; border-radius: 10px; }
+
     .whatsapp-button {
       background-color: #25D366;
       color: white;
@@ -104,19 +101,23 @@ cv<!DOCTYPE html>
       text-decoration: none;
       margin-top: 15px;
     }
+
     .whatsapp-button:hover { background-color: #1ebc59; }
+
     .contact {
       font-size: 18px;
       text-align: center;
       line-height: 30px;
       margin-bottom: 50px;
     }
+
     video {
       width: 100%;
       max-width: 800px;
       display: block;
       margin: 40px auto;
     }
+
     @media (min-width: 600px) { .product-card { width: 45%; } }
     @media (min-width: 900px) {
       .product-card { width: 250px; }
@@ -128,33 +129,32 @@ cv<!DOCTYPE html>
 
 <body>
 
- 
+<header>
+  	
+</header>
 
-  <header><br>
-    RADHE OIL MILL<br><br>
-  </header>
+<nav class="menu-bar">
+  <a href="#home" class="active"><i class="fas fa-home"></i>HOME</a>
+  <a href="#products"><i class="fas fa-box-open"></i>PRODUCTS</a>
+  <a href="#contact"><i class="fas fa-phone"></i>CONTACT US</a>
+  <a href="#about"><i class="fas fa-users"></i>ABOUT US</a>
+  <a href="#follow us"><i class="fas fa-child"></i>Follow Us</a>
+</nav>
 
-  <nav class="menu-bar">
-    <a href="#home" class="active"><i class="fas fa-home"></i>HOME</a>
-    <a href="#products"><i class="fas fa-box-open"></i>PRODUCTS</a>
-    <a href="#contact"><i class="fas fa-phone"></i>CONTACT US</a>
-    <a href="#about"><i class="fas fa-users"></i>ABOUT US</a>
-    <a href="#follow us"><i class="fas fa-child"></i>Follow Us</a>
+<div id="mainContent">
 
-  </nav>
-
- <div id="mainContent">
-    <div id="home">
-      <div style="text-align:center; margin-top:35px;">
-        <img src="image11.jpg" alt="Radhe Oil Mill Banner" style="max-width: 90%; border-radius: 12px;">
-      </div>
-      <p>રાધે ઓઈલ મિલ માં, અમે 100% શુદ્ધ, કેમિકલ-ફ્રી તેલ પ્રદાન કરીએ છીએ,<br> જે દરેક બોટલ સાથે શ્રેષ્ઠ સ્વાદ અને સ્વાસ્થ્યલાભ આપે છે...</p>
-      <div style="text-align:center;">
-        <a class="button" href="readmore.html">READ MORE</a>
-      </div>
+  <div id="home">
+    <div style="text-align:center; margin-top:35px;">
+      <img src="image11.jpg" alt="Radhe Oil Mill Banner" style="max-width: 90%; border-radius: 12px;">
     </div>
+    <p>રાધે ઓઈલ મિલ માં, અમે 100% શુદ્ધ, કેમિકલ-ફ્રી તેલ પ્રદાન કરીએ છીએ,<br>
+    જે દરેક બોટલ સાથે શ્રેષ્ઠ સ્વાદ અને સ્વાસ્થ્યલાભ આપે છે...</p>
+    <div style="text-align:center;">
+      <a class="button" href="readmore.html">READ MORE</a>
+    </div>
+  </div>
 
-    <div id="products">
+   <div id="products">
       <h1>PRODUCTS</h1>
       <div class="product-container">
         <div class="product-card">
@@ -257,11 +257,17 @@ cv<!DOCTYPE html>
     <a href="https://maps.app.goo.gl/woZ1YF6A4AMDFnhCA" target="_blank" style="margin: 10px; text-decoration: none;">
       <img src="map.jpg" alt="map" style="width:50px; height:50px; border-radius: 10px; transition: transform 0.3s;">
     </a>
-
-  </div>
 </div>
 
+<script>
+  const links = document.querySelectorAll('.menu-bar a');
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      links.forEach(l => l.classList.remove('active'));
+      link.classList.add('active');
+    });
+  });
+</script>
+
 </body>
-
 </html>
-
